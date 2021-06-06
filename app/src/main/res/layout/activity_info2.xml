@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sidestyle">
+
+    <TextView
+        android:id="@+id/txtInfo2Dog"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bottomedge"
+        android:gravity="center"
+        android:text="강아지 관련 정보"
+        android:textColor="#EF8B47"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtInfo2Text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Dog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumgothic"
+        android:gravity="center"
+        android:textColor="#228B22"
+        android:background="@drawable/imgframe"
+        android:text="예방접종 관련 정보"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Text2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:background="@drawable/imgframe"
+        android:gravity="center"
+        android:text="입양 후 해야할 10가지"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Text3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Text2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:text="강아지 간식 고르는 법"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Text4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Text3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:text="강아지 밥그릇 고르는 법"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Text5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Text4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:text="강아지가 아플 때 보이는 행동"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Cat"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bottomedge"
+        android:gravity="center"
+        android:text="고양이 관련 정보"
+        android:textColor="#EF8B47"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Text5" />
+
+    <TextView
+        android:id="@+id/txtInfo2Cat1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Cat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:text="고양이를 잘 키우는 5가지 방법"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Cat2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Cat1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:text="고양이를 스트레스 받게하는 12가지 행동"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Cat3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Cat2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:text="고양이 모래 알아보기"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Cat4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Cat3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="#228B22"
+        android:text="새끼고양이 입양 8가지 팁"/>
+
+    <TextView
+        android:id="@+id/txtInfo2Cat5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtInfo2Cat4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="18sp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/imgframe"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:typeface="monospace"
+        android:fontFamily="@font/nanumgothic"
+
+        android:textColor="#228B22"
+        android:text="고양이 적정 사료량과 빈도"/>
+
+    <Button
+        android:id="@+id/btnInfo2Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/backstyle"
+        android:text="돌아가기"
+        app:layout_constraintLeft_toRightOf="@id/txtInfo2Dog"
+        app:layout_constraintTop_toTopOf="@id/txtInfo2Dog" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

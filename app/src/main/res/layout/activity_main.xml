@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/sidestyle">
+
+    <TextView
+        android:id="@+id/frame"
+        android:layout_width="410dp"
+        android:layout_height="322dp"
+        android:background="@drawable/blackframe"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/ado"
+        android:layout_width="79dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="88dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/frame"
+        app:srcCompat="@drawable/flower3" />
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="198dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/frame"
+        app:srcCompat="@drawable/image4" />
+
+    <ImageView
+        android:id="@+id/imgMainAnimal"
+        android:layout_width="179dp"
+        android:layout_height="166dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flower"
+        app:srcCompat="@drawable/gamyu" />
+
+    <TextView
+        android:id="@+id/txtMainDate"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="안락사예정일"
+        android:textColor="#006400"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imgMainAnimal"
+        app:layout_constraintTop_toBottomOf="@id/txtMainNotice" />
+
+    <TextView
+        android:id="@+id/txtMainAge"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="나이"
+        android:textColor="#006400"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imgMainAnimal"
+        app:layout_constraintTop_toBottomOf="@id/txtMainKind" />
+
+    <TextView
+        android:id="@+id/txtMainKind"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:textColor="#006400"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imgMainAnimal"
+        app:layout_constraintTop_toBottomOf="@id/txtMainNotice2" />
+
+    <TextView
+        android:id="@+id/txtMainNotice2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="품종"
+        android:textColor="#0000FF"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/txtMainDate"
+        app:layout_constraintTop_toBottomOf="@id/txtMainDate" />
+
+    <TextView
+        android:id="@+id/txtMainNotice"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="사망일"
+        android:textColor="#FFFF0000"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@id/imgMainAnimal"
+        app:layout_constraintTop_toTopOf="@id/imgMainAnimal" />
+
+    <Button
+        android:id="@+id/btnMainGoSearch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btnstyle"
+        android:text="검색페이지로"
+        app:layout_constraintBottom_toTopOf="@id/frame"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnMainGoInfo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btnstyle"
+        android:text="유익한 정보들"
+        app:layout_constraintBottom_toTopOf="@id/frame"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/MainImage"
+        android:layout_width="389dp"
+        android:layout_height="184dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnMainGoSearch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358"
+        app:srcCompat="@drawable/main1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="지난주 안락사 현황"
+        android:textColor="#0000FF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtMainDeadCount"
+        app:layout_constraintLeft_toLeftOf="@id/txtMainDeadCount" />
+
+    <TextView
+        android:id="@+id/txtMainDeadCount"
+        android:layout_width="75dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="되나요"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/btnMainGoSearch"
+        app:layout_constraintTop_toTopOf="@id/btnMainGoSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

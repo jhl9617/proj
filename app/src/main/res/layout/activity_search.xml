@@ -1,0 +1,2002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sidestyle">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:src="@drawable/first"
+                android:id="@+id/btnSearchPageFirst"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@id/imgSearchAnimal1"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+
+            <!--    1번 레이아웃-->
+
+            <Button
+                android:id="@+id/btnSearchCondition"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btnstyle"
+                android:gravity="center"
+                android:text="검색 조건 설정"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgSearchAnimal1"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="130dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSearchBack" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal1"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal1"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt1"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt1"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt1"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt1"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt1"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt1"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt1" />
+
+            <TextView
+                android:id="@+id/txtSearchKind1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt1"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt1"/>
+
+
+            <TextView
+                android:id="@+id/txtSearchKindCd1"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt1"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind1" />
+
+            <TextView
+                android:id="@+id/txtSearchId1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind1"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt1"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge1"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt1"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId1" />
+
+
+            <!--    2번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal2"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal1"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal1"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal2"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal2"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt2"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal2"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt2"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt2"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt2"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt2"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt2" />
+
+            <TextView
+                android:id="@+id/txtSearchKind2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt2"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt2"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd2"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt2"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind2" />
+
+            <TextView
+                android:id="@+id/txtSearchId2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind2"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt2"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge2"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt2"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId2" />
+
+            <!--    3번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal3"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal2"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal2"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal3"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal3"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt3"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal3"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt3"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt3"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt3"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt3"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt3" />
+
+            <TextView
+                android:id="@+id/txtSearchKind3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt3"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt3"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd3"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt3"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind3" />
+
+            <TextView
+                android:id="@+id/txtSearchId3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind3"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt3"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge3"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt3"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId3" />
+
+            <!--    4번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal4"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal3"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal3"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal4"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal4"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt4"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal4"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt4"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt4"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt4"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt4"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt4" />
+
+            <TextView
+                android:id="@+id/txtSearchKind4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt4"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt4"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd4"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt4"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind4" />
+
+            <TextView
+                android:id="@+id/txtSearchId4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind4"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt4"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge4"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt4"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId4" />
+
+            <!--    5번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal5"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal4"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal4"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal5"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal5"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt5"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal5"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt5"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt5"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt5"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt5"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt5"/>
+
+            <TextView
+                android:id="@+id/txtSearchKind5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt5"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt5"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd5"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt5"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind5" />
+
+            <TextView
+                android:id="@+id/txtSearchId5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind5"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt5"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge5"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt5"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId5" />
+
+            <!--    6번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal6"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal5"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal5"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal6"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal6"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt6"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal6"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt6"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt6"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt6"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt6"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt6"/>
+
+            <TextView
+                android:id="@+id/txtSearchKind6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt6"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt6"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd6"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt6"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind6" />
+
+            <TextView
+                android:id="@+id/txtSearchId6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind6"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt6"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge6"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt6"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId6" />
+
+            <!--    7번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal7"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal6"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal6"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal7"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal7"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt7"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal7"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt7"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt7"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt7"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt7"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt7"/>
+
+            <TextView
+                android:id="@+id/txtSearchKind7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt7"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt7"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd7"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt7"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind7" />
+
+            <TextView
+                android:id="@+id/txtSearchId7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind7"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt7"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge7"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt7"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId7" />
+
+
+            <!--    8번 레이아웃-->
+
+            <ImageView
+                android:id="@+id/imgSearchAnimal8"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal7"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal7" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal8"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal8"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt8"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal8"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt8"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt8"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt8"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt8"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt8"/>
+
+            <TextView
+                android:id="@+id/txtSearchKind8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt8"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt8"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd8"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt8"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind8" />
+
+            <TextView
+                android:id="@+id/txtSearchId8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind8"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt8"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge8"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt8"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId8" />
+
+
+            <!--    9번 레이아웃-->
+            <ImageView
+                android:id="@+id/imgSearchAnimal9"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal8"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal8"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal9"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal9"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt9"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal9"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt9"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt9"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt9"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt9"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt9"/>
+
+            <TextView
+                android:id="@+id/txtSearchKind9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt9"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt9"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd9"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt9"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind9" />
+
+            <TextView
+                android:id="@+id/txtSearchId9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind9"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt9"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge9"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt9"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId9" />
+
+
+            //10번 레이아웃
+            <ImageView
+                android:id="@+id/imgSearchAnimal10"
+                android:layout_width="131dp"
+                android:layout_height="135dp"
+                app:layout_constraintLeft_toLeftOf="@id/imgSearchAnimal9"
+                app:layout_constraintTop_toBottomOf="@id/imgSearchAnimal9"
+                android:scaleType="fitXY"
+                android:background="@drawable/imgframe"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSdt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 시작일"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textColor="#0000FF"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal10"
+                app:layout_constraintTop_toTopOf="@id/imgSearchAnimal10"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeSdt10"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/imgSearchAnimal10"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchSdt10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 종료일"
+                android:textColor="#FF0000"
+                app:layout_constraintRight_toRightOf="@id/txtSearchNoticeEdt10"
+                app:layout_constraintTop_toTopOf="@id/txtSearchSdt10"
+                android:layout_marginRight="22dp"/>
+
+            <TextView
+                android:id="@+id/txtSearchNoticeEdt10"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/txtSearchNoticeSdt10"
+                app:layout_constraintTop_toTopOf="@id/txtSearchNoticeSdt10"/>
+
+            <TextView
+                android:id="@+id/txtSearchKind10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종 이름"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchNoticeSdt10"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt10"/>
+
+            <TextView
+                android:id="@+id/txtSearchKindCd10"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeSdt10"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchKind10" />
+
+            <TextView
+                android:id="@+id/txtSearchId10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="40dp"
+                app:layout_constraintTop_toTopOf="@id/txtSearchKind10"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt10"/>
+
+            <TextView
+                android:id="@+id/txtSearchAge10"
+                android:layout_width="107dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/basic"
+                android:textColor="#006400"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="@id/txtSearchNoticeEdt10"
+                app:layout_constraintTop_toBottomOf="@id/txtSearchId10" />
+
+            <TextView
+                android:id="@+id/txtSearchColor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchColor10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchSex10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchHappenPlace10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNeut10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchNmProtect10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchTelProtect10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <TextView
+                android:id="@+id/txtSearchImgString10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="214dp" />
+
+            <Button
+                android:id="@+id/btnSearchBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="312dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/backstyle"
+                android:text="뒤로 가기"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/btnstyle"
+                android:textColor="@color/black"
+                android:id="@+id/btnSearchPage5bNum1"
+                android:text="1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPageFirst" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage5bNum2"
+                android:background="@drawable/btnstyle"
+                android:textColor="@color/black"
+                android:layout_width="30dp"
+                android:text="2"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage5bNum1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage5bNum3"
+                android:background="@drawable/btnstyle"
+                android:textColor="@color/black"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:text="3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage5bNum2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage5bNum4"
+                android:background="@drawable/btnstyle"
+                android:textColor="@color/black"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:text="4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage5bNum3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage5bNum5"
+                android:background="@drawable/btnstyle"
+                android:textColor="@color/black"
+                android:text="5"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage5bNum4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage4bNum1"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/btnstyle"
+                android:text="1"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPageFirst" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage4bNum2"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/btnstyle"
+                android:text="2"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage4bNum1"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage4bNum1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage4bNum3"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/btnstyle"
+                android:text="3"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage4bNum2"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage4bNum2" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage4bNum4"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/btnstyle"
+                android:text="4"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage4bNum3"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage4bNum3" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage3bNum1"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/btnstyle"
+                android:text="1"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage4bNum1"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPageFirst" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage3bNum2"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/btnstyle"
+                android:visibility="invisible"
+                android:text="2"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage3bNum1"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage3bNum1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage3bNum3"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/btnstyle"
+                android:visibility="invisible"
+                android:text="3"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage3bNum2"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage3bNum2" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage2bNum1"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="95dp"
+                android:background="@drawable/btnstyle"
+                android:text="1"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPageFirst" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage2bNum2"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/btnstyle"
+                android:text="2"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage2bNum1"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage2bNum1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchPage1bNum1"
+                android:layout_width="29dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="126dp"
+                android:background="@drawable/btnstyle"
+                android:text="1"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPage2bNum1"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPageFirst" />
+
+            <ImageButton
+                android:src="@drawable/last"
+                android:id="@+id/btnSearchPageLast"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toTopOf="@id/btnSearchPageFirst"
+                app:layout_constraintLeft_toRightOf="@id/btnSearchPage5bNum5" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="검색 결과 : "
+                android:gravity="center"
+                android:textColor="#0000FF"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/txtSearchResult"
+                app:layout_constraintRight_toLeftOf="@id/txtSearchResult"
+                android:layout_marginRight="20dp"
+                tools:layout_editor_absoluteX="216dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <TextView
+                android:id="@+id/txtSearchResult"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/btnSearchCondition"
+                android:textColor="#006400"
+                tools:layout_editor_absoluteX="317dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <TextView
+                android:id="@+id/txtTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSearchBack"
+                android:text="TextView"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
